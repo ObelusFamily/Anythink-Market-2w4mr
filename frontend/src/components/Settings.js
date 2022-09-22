@@ -147,7 +147,7 @@ class Settings extends React.Component {
       <div className="settings-page">
         <div className="container page">
           <div className="row">
-            <div className="col-md-6 offset-md-3 col-xs-12">
+            <div className="col-xs-6 offset-xs-3 col-xs-12">
               <h1 className="text-xs-center">Your Settings</h1>
 
               <ListErrors errors={this.props.errors}></ListErrors>

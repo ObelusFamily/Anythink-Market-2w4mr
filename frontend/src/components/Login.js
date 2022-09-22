@@ -43,7 +43,7 @@ class Login extends React.Component {
       <div className="auth-page">
         <div className="container page text-center text-dark">
           <div className="row">
-            <div className="col-md-6 offset-md-3 col-xs-12 bg-white p-4">
+            <div className="col-md-6 offset-xs-3 col-xs-12 xs-white p-4">
               <h1 className="text-xs-center font-weight-bold pb-4">Sign In</h1>
 
               <ListErrors errors={this.props.errors} />

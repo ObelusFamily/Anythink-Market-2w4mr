@@ -60,7 +60,7 @@ class Header extends React.Component {
   render() {
     return (
       <nav
-        className="navbar navbar-expand-md navbar-dark"
+        className="navbar navbar-expand-xs navbar-dark"
         style={{ padding: "0.5rem 2rem" }}
       >
         <Link to="/" className="navbar-brand">

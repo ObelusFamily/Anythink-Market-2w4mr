@@ -13,7 +13,7 @@ const CommentContainer = (props) => {
           currentUser={props.currentUser}
         />
         <div className="row">
-          <div className="mt-4 col-xs-10 col-md-6">
+          <div className="mt-4 col-xs-10 col-xs-6">
             <list-errors errors={props.errors}></list-errors>
             <CommentInput slug={props.slug} currentUser={props.currentUser} />
           </div>

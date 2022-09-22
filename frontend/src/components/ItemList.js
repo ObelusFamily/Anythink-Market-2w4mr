@@ -16,7 +16,7 @@ const ItemList = (props) => {
       <div className="row">
         {props.items.map((item) => {
           return (
-            <div className="col-sm-4 pb-2" key={item.slug}>
+            <div className="col-xs-4 pb-2" key={item.slug}>
               <ItemPreview item={item} />
             </div>
           );
