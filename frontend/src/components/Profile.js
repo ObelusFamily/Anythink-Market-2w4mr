@@ -149,7 +149,7 @@ class Profile extends React.Component {
 
         <div className="container">
           <div className="row py-4">
-            <div className="col-xs-12 col-xs-10 offset-xs-1">
+            <div className="col-xs-10 col-xs-8 offset-xs-1">
               <div className="items-toggle">{this.renderTabs()}</div>
 
               <ItemList
