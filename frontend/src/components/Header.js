@@ -26,33 +26,30 @@ const LoggedOutView = (props) => {
 const LoggedInView = (props) => {
   if (props.currentUser) {
     return (
-      <ul className="navbar-nav ml-auto">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-         <li className="nav-item">
-           <Link to="/editor" className="nav-link">
-             <i className="ion-compose"></i>&nbsp;New Item
-           </Link>
-         </li>
-        
+      <><div class="d-flex justify-content-start">...</div><ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <Link to="/editor" className="nav-link">
+            <i className="ion-compose"></i>&nbsp;New Item
+          </Link>
+        </li>
 
-         <li className="nav-item">
-           <Link to="/settings" className="nav-link">
-             <i className="ion-gear-a"></i>&nbsp;Settings
-           </Link>
-         </li>
 
-         <li className="nav-item">
-           <Link to={`/@${props.currentUser.username}`} className="nav-link">
-             <img
-               src={props.currentUser.image}
-               className="user-pic pr-1"
-               alt={props.currentUser.username}
-             />
+        <li className="nav-item">
+          <Link to="/settings" className="nav-link">
+            <i className="ion-gear-a"></i>&nbsp;Settings
+          </Link>
+        </li>
+
+        <li className="nav-item">
+          <Link to={`/@${props.currentUser.username}`} className="nav-link">
+            <img
+              src={props.currentUser.image}
+              className="user-pic pr-1"
+              alt={props.currentUser.username} />
             {props.currentUser.username}
-           </Link>
-         </li>
-        </link>
-      </ul>
+          </Link>
+        </li>
+      </ul></>
     );
   }
 
