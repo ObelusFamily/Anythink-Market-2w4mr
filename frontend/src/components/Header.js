@@ -6,7 +6,6 @@ const LoggedOutView = (props) => {
   if (!props.currentUser) {
     return (
       <ul className="navbar-nav ml-auto">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link>
         <li className="nav-item">
           <Link to="/login" className="nav-link">
             Sign in
@@ -28,12 +27,13 @@ const LoggedInView = (props) => {
   if (props.currentUser) {
     return (
       <ul className="navbar-nav ml-auto">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link>
-        <li className="nav-item">
-          <Link to="/editor" className="nav-link">
-            <i className="ion-compose"></i>&nbsp;New Item
-          </Link>
-        </li>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+         <li className="nav-item">
+           <Link to="/editor" className="nav-link">
+             <i className="ion-compose"></i>&nbsp;New Item
+           </Link>
+         </li>
+        </link>
 
         <li className="nav-item">
           <Link to="/settings" className="nav-link">
