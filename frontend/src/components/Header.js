@@ -26,13 +26,12 @@ const LoggedOutView = (props) => {
 const LoggedInView = (props) => {
   if (props.currentUser) {
     return (
-      <><div class="d-flex justify-content-start">...</div><ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto">
         <li className="nav-item">
           <Link to="/editor" className="nav-link">
             <i className="ion-compose"></i>&nbsp;New Item
           </Link>
         </li>
-
 
         <li className="nav-item">
           <Link to="/settings" className="nav-link">
@@ -49,7 +48,7 @@ const LoggedInView = (props) => {
             {props.currentUser.username}
           </Link>
         </li>
-      </ul></>
+      </ul>
     );
   }
 
