@@ -22,7 +22,7 @@ body {
   font-weight: 600;
 }
 .minegeek-navbar {
-  background-color: #393939;
+  background-color: hsl(192, 15%, 94%);
 }
 .sunray {
   background-image: url("sunray.jpeg");
