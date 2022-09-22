@@ -33,24 +33,25 @@ const LoggedInView = (props) => {
              <i className="ion-compose"></i>&nbsp;New Item
            </Link>
          </li>
-        </link>
+        
 
-        <li className="nav-item">
-          <Link to="/settings" className="nav-link">
-            <i className="ion-gear-a"></i>&nbsp;Settings
-          </Link>
-        </li>
+         <li className="nav-item">
+           <Link to="/settings" className="nav-link">
+             <i className="ion-gear-a"></i>&nbsp;Settings
+           </Link>
+         </li>
 
-        <li className="nav-item">
-          <Link to={`/@${props.currentUser.username}`} className="nav-link">
-            <img
-              src={props.currentUser.image}
-              className="user-pic pr-1"
-              alt={props.currentUser.username}
-            />
+         <li className="nav-item">
+           <Link to={`/@${props.currentUser.username}`} className="nav-link">
+             <img
+               src={props.currentUser.image}
+               className="user-pic pr-1"
+               alt={props.currentUser.username}
+             />
             {props.currentUser.username}
-          </Link>
-        </li>
+           </Link>
+         </li>
+        </link>
       </ul>
     );
   }
