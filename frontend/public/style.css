@@ -47,8 +47,8 @@ body {
   position: fixed;
   right: -500px;
   bottom: 0px;
-  height: 590px;
-  width: 490px;
+  height: 400px;
+  width:  300px;
   z-index: 1041;
   background-size: cover;
 }
