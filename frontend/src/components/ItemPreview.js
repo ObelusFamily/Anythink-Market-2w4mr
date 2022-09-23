@@ -37,7 +37,7 @@ const ItemPreview = (props) => {
           <img
             alt="item"
             src={item.image}
-            Image source={ item.img ? { uri: fr} : require('../frontend/public/placeholder.png')} 
+            Image source={this.props.imageName}
             className="card-img-top item-img"
             style={{ borderRadius: "20px" }}
           />
