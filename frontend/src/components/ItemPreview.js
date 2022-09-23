@@ -18,7 +18,6 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const ItemPreview = (props) => {
-  const img = document.querySelector("img"); 
   img.src = "placeholder.png";
       const item = props.item;
 
